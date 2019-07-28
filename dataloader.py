@@ -1,13 +1,17 @@
 #-*-coding:utf-8-*-
 
+import torch
 import torch.utils.data as data
 import torchvision.transforms as transforms
 import torch.multiprocessing as mp
 from threading import Thread
 
+from yolo.preprocess import prep_image, prep_frame, inp_to_image
+
 from opt import opt
 import os
 import sys
+import time
 if sys.version_info >= (3, 0):
     from queue import Queue,LifoQueue
 
@@ -66,9 +70,9 @@ class ImageLoader:
     def start(self):
         if self.format == 'yolo':
             if opt.sp:
-                p = Thread(target=self.getitem_yolo,args=())
+                p = Thread(target=self.getitem_yolo, args=())
             else:
-                p = mp.Process(target=self.getitem_yolo,args=())
+                p = mp.Process(target=self.getitem_yolo, args=())
         else:
             raise NotImplementedError
         p.daemon = True
@@ -78,11 +82,38 @@ class ImageLoader:
     def getitem_yolo(self):
         for i in range(self.num_batches):
             img = []
-            origin_img = []
+            orig_img = []
             im_name = []
             im_dim_list = []
             for k in range(i*self.batchSize,min(i+1)*self.batchSize,self.datalen):
-                pass
+                inp_dim = int(opt.inp_dim)
+                im_name_k = self.imglist[k].rstrip('\n').rstrip('\r')
+                im_name_k = os.path.join(self.img_dir, im_name_k)
+                img_k, orig_img_k, im_dim_list_k = prep_image(im_name_k, inp_dim)
 
-ina = ImageLoader()
-ina.start()
+                img.append(img_k)
+                orig_img.append(orig_img_k)
+                im_name.append(im_name_k)
+                im_dim_list.append(im_dim_list_k)
+
+            with torch.no_grad():
+                im = torch.cat(img)
+                im_dim_list = torch.FloatTensor(im_dim_list).repeat(1,2)
+                im_dim_list = im_dim_list
+
+            while self.Q.full():
+                time.sleep(2)
+
+            self.Q.put(((img, orig_img, im_name, im_dim_list)))
+
+    def getitem(self):
+        return self.Q.get()
+
+    def length(self):
+        return len(self.imglist)
+
+    def len(self):
+        return self.Q.qsize()
+
+class DetectionLoader:
+    def __int__(self, dataloder, batchSize=1, queueSize=1024):
