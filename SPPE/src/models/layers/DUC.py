@@ -1,11 +1,11 @@
+#-*-coding:utf-8-*-
+import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
 
 class DUC(nn.Module):
     '''
-    INPUT: inplanes, planes, upscale_factor
-    OUTPUT: (planes // 4)* ht * wd
+    input :inplanes,plans,upscale_factos = 2
+    out: panes //4 )* ht*wd
     '''
     def __init__(self, inplanes, planes, upscale_factor=2):
         super(DUC, self).__init__()
@@ -13,11 +13,12 @@ class DUC(nn.Module):
         self.bn = nn.BatchNorm2d(planes)
         self.relu = nn.ReLU()
 
-        self.pixel_shuffle = nn.PixelShuffle(upscale_factor)
+        self.pixel_shuffle = nn.PixelShuffle(upscale_factor=2)
 
     def forward(self, x):
         x = self.conv(x)
         x = self.bn(x)
         x = self.relu(x)
         x = self.pixel_shuffle(x)
+
         return x

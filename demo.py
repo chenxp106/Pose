@@ -6,7 +6,7 @@ from tqdm import tqdm
 import numpy as np
 
 from dataloader import ImageLoader, DetectionLoader, DetectionProcess, Mscoco, DataWriter
-from SPPE.src.main_fast_interence import InferenNet_fast, InferenNet
+from SPPE.src.main_fast_interence import InferenNet_fast
 
 from fn import getTime
 

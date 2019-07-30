@@ -1,4 +1,5 @@
-from torch import nn
+
+import torch.nn as nn
 
 
 class SELayer(nn.Module):
@@ -13,6 +14,7 @@ class SELayer(nn.Module):
         )
 
     def forward(self, x):
+        # view函数是将图片进行reshape
         b, c, _, _ = x.size()
         y = self.avg_pool(x).view(b, c)
         y = self.fc(y).view(b, c, 1, 1)
