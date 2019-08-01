@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25fb22a9-01d5-4324-b0e1-954e862f7cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SPPE/src/models/layers/SE_moduls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/sppe/duc_se.pth" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/yolo/yolov3-spp.weights" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/models/FastPost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/models/layers/DUC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/models/layers/SE_Resnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/models/layers/SE_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/opt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/utils/dataset/coco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/utils/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_sppe/src/utils/img.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SPPE/src/main_fast_interence.py" beforeDir="false" afterPath="$PROJECT_DIR$/SPPE/src/main_fast_interence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/FastPose.py" beforeDir="false" afterPath="$PROJECT_DIR$/SPPE/src/models/FastPose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/DUC.py" beforeDir="false" afterPath="$PROJECT_DIR$/SPPE/src/models/layers/DUC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/PRM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/Residual.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/Resnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/SE_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPPE/src/models/layers/util_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/res/vis/a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/res/vis/a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/res/vis/b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/examples/res/vis/b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SPPE/src/main_fast_interence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#1#13#0" expanded="true" />
               </folding>
@@ -40,43 +41,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/opt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SPPE/src/models/FastPose.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#21#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/DUC.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_sppe/src/models/FastPost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
-                <element signature="e#21#42#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_sppe/src/utils/pose.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="123" column="12" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -87,40 +76,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_moduls.py">
+        <entry file="file://$PROJECT_DIR$/SPPE/src/utils/img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="1853">
+              <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataloader.py">
+        <entry file="file://$PROJECT_DIR$/SPPE/src/utils/pose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="515" column="36" selection-start-line="515" selection-start-column="36" selection-end-line="515" selection-end-column="36" />
+            <state relative-caret-position="-766">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#184#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_sppe/src/models/layers/SE_Resnet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1492">
+              <caret line="121" column="27" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+              <folding>
+                <element signature="e#1#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="510">
+              <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -137,6 +132,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fast_inference</find>
+      <find>hm</find>
+      <find>nThreads</find>
+      <find>trainBatch</find>
+      <find>2f</find>
+      <find>resnet101</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,25 +149,36 @@
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/SPPE/src/models/layers/SE_moduls.py" />
-        <option value="$PROJECT_DIR$/SPPE/src/main_fast_interence.py" />
         <option value="$PROJECT_DIR$/SPPE/src/models/FastPose.py" />
         <option value="$PROJECT_DIR$/SPPE/src/models/layers/DUC.py" />
+        <option value="$PROJECT_DIR$/train_sppe/models/FastPost.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/models/FastPost.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/utils/pose.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/utils/img.py" />
+        <option value="$PROJECT_DIR$/opt.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/utils/eval.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/train.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/models/layers/SE_module.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/models/layers/DUC.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/utils/dataset/coco.py" />
         <option value="$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py" />
+        <option value="$PROJECT_DIR$/train_sppe/src/models/layers/SE_Resnet.py" />
+        <option value="$PROJECT_DIR$/SPPE/src/main_fast_interence.py" />
+        <option value="$PROJECT_DIR$/fn.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
+    <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,19 +207,7 @@
             <path>
               <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pose" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pose" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="sppe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pose" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
@@ -243,16 +242,102 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+              <item name="exp5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="layers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pose" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pose" type="462c0819:PsiDirectoryNode" />
+              <item name="train_sppe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlphaPose-pytorch" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/train_sppe/exp" />
+      <recent name="$PROJECT_DIR$/train_sppe/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/train_sppe/data/coco" />
+      <recent name="$PROJECT_DIR$/train_sppe/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,7 +351,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.train">
+    <configuration name="FastPost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train_sppe/src/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_sppe/src/models/FastPost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,7 +388,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
-      <option name="PARAMETERS" value="--indir img --outdir examples/res --save_img --sp" />
+      <option name="PARAMETERS" value="--indir img --outdir examples/res --nClasses 17   --save_img --sp" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -289,9 +396,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="img" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train_sppe/src/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_sppe/src/utils/img.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train_sppe/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_sppe/src/train.py" />
+      <option name="PARAMETERS" value="--dataset coco --expID exp1 --nClasses 17 --LR 1e-4 --nEpochs 5 --trainBatch 2 --validBatch 1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.FastPost" />
+      <item itemvalue="Python.img" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.demo" />
+        <item itemvalue="Python.img" />
+        <item itemvalue="Python.FastPost" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +466,11 @@
       <option name="presentableId" value="Default" />
       <updated>1564403859278</updated>
       <workItem from="1564403860453" duration="7416000" />
-      <workItem from="1564453478899" duration="11833000" />
+      <workItem from="1564453478899" duration="24306000" />
+      <workItem from="1564544342795" duration="13778000" />
+      <workItem from="1564574163299" duration="3138000" />
+      <workItem from="1564577661894" duration="6622000" />
+      <workItem from="1564633720532" duration="3293000" />
     </task>
     <task id="LOCAL-00001" summary="finish demo">
       <created>1564404609736</created>
@@ -315,36 +479,50 @@
       <option name="project" value="LOCAL" />
       <updated>1564404609736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="网络搭建成功，能跑通demo">
+      <created>1564475471198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564475471198</updated>
+    </task>
+    <task id="LOCAL-00003" summary="网络搭建成功，训练的网络可以跑通">
+      <created>1564641161594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564641161594</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19249000" />
+    <option name="totallyTimeSpent" value="58553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25319266" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2676291" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24148607" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920536" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29411766" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23632611" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32920536" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.14035088" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3023736" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32920536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32981676" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -353,7 +531,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish demo" />
+    <MESSAGE value="网络搭建成功，能跑通demo" />
+    <MESSAGE value="网络搭建成功，训练的网络可以跑通" />
+    <option name="LAST_COMMIT_MESSAGE" value="网络搭建成功，训练的网络可以跑通" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -363,11 +543,44 @@
           <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_sppe/src/train.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_sppe/src/train.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_sppe/src/train.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_sppe/src/train.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_sppe/src/train.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.bn1" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pose$demo.coverage" NAME="demo Coverage Results" MODIFIED="1564474719460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pose$img.coverage" NAME="img Coverage Results" MODIFIED="1564560213778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_sppe/src/utils" />
+    <SUITE FILE_PATH="coverage/Pose$demo.coverage" NAME="demo Coverage Results" MODIFIED="1564640416639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pose$FastPost.coverage" NAME="FastPost Coverage Results" MODIFIED="1564489132981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_sppe/src/models" />
+    <SUITE FILE_PATH="coverage/Pose$train.coverage" NAME="train Coverage Results" MODIFIED="1564640565543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_sppe/src" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/yolo/detect.py">
@@ -376,23 +589,6 @@
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/utils/img.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -411,70 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_moduls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/DUC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/main_fast_interence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#1#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/models/FastPose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#21#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/cxpenv/lib/python3.7/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="776" selection-start-line="776" selection-end-line="776" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/res/vis/a.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/a.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="e#21#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -482,20 +614,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fn.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="255">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cxpenv/lib/python3.7/site-packages/torch/tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/opt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cxpenv/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="393" selection-start-line="393" selection-end-line="393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19482">
+          <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cxpenv/lib/python3.7/site-packages/torch/autograd/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="101" column="65" lean-forward="true" selection-start-line="101" selection-start-column="65" selection-end-line="101" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cxpenv/lib/python3.7/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8585">
+          <caret line="512" selection-start-line="512" selection-end-line="512" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/utils/eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/utils/img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3876">
+          <caret line="233" column="34" selection-start-line="233" selection-start-column="34" selection-end-line="233" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_moduls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/models/layers/SE_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/DUC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" selection-start-line="4" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/models/layers/DUC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/models/hg-prm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/models/FastPose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#21#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/a.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/utils/dataset/coco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#20#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/models/layers/SE_Resnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/models/FastPost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/models/layers/SE_Resnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1492">
+          <caret line="121" column="27" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+          <folding>
+            <element signature="e#1#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/main_fast_interence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#1#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/utils/pose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-766">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPPE/src/utils/img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/res/vis/b.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/res/vis/a.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_sppe/src/utils/pose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="123" column="12" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
